@@ -76,10 +76,7 @@ export const Home = () => {
             borderRadius: "50px"
           }} /></button>)
       }
-      <div className='container-fluid'>
-      <div className='row'>
-
-      <nav className="navbar navbar-expand-sm fixed-top  bg-light" style={{ minWidth: "auto" }}>
+          <nav className="navbar navbar-expand-sm fixed-top  bg-light">
         <a className="navbar-brand p-0" href="#sectionHome">Sagar</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#colapsid">
           <span className="navbar-toggler-icon"></span>
@@ -94,26 +91,17 @@ export const Home = () => {
         </div>
       </nav>
 
-      </div> 
-   </div>
-
-
-      <div className='sections'>
-        {/* *************************Home Section******************** */}
-        <div className='row'>
-          <div id="sectionHome" className='sechome'>
-            <div className='container-fluid'>
+<div className='sections'>
+  {/* **************************************Home Section *****************************/}
+          <div id="sectionHome" className='sechome container-fluid'>
               <div className='row rp-y'>
 
-                <div className=' col-sm-12 col-md-6'>
-                  <div className='homeh1'>
+                <div className=' col-sm-12 col-md-6 mx-auto'>
+                  <div className='homeh1'style={{alignContent:"center",textAlign:"center"}}>
                     <h1 className='fs-1 text-white'>HEY, I'AM SAGAR MASAL</h1>
                     <h5><b className='text-break'>
                       Web Developer
-                      {/* hey! My name is Sagar Masal ,I am an Web developer.
-                     I have worked in CiitInstitute.Pvt.ltd for more than 6-7 month. During this,
-                    i had compleated many MERN Stack projects.
-                    Projects in which i use the technologies like Reactjs,MVC,C#,Html5,CSS3,JavaScript,JQuery,bootstrap,MS-SQL,MY-Sql,Express.Js,Node.JS etc. */}
+                     
                     </b></h5>
 
                     <a href={sagarcv} className='btn btn-radius btndownload' download>
@@ -121,15 +109,24 @@ export const Home = () => {
                         &nbsp;&nbsp;&nbsp;Download cv</i>
                     </a>
                   </div>
-                </div>
-
-                <div className='col-sm-12 col-md-6 imgdv mx-auto' style={{ width: "320px", marginTop: "25px" }} >
+               </div>
+                <div className='col-sm-12 col-md-6 d-flex justify-content-center align-items-center'>
                   <div className="ui-card">
-                    <img src={sagar} className='img-fluid rounded-pill  img' alt='' />
+                    <img src={sagar} className='img-fluid rounded-pill  img' alt='' style={{width:"100%"}} />
                     <div className="imgdesc">
-                      <p>
-Sagar
+                      <p className='fs-3'>
+                    Contact Me
                       </p>
+                      <div className='' style={{ color: "#FFB6B6", fontSize: "50px" }}>
+                     
+                      <a href="https://wa.me/7387523318">
+                      <i class="fa fa-whatsapp whatsappcolor "></i>
+                      
+                        </a>
+                       
+                        <a href='mailto:sagarmasal2018@gmail.com'>
+                          <i class="fa fa-envelope ms-3 mailcolor" ></i> </a>
+                      </div>
                     </div>
                   </div>
 
@@ -138,37 +135,36 @@ Sagar
               </div>
 
             </div>
-          </div>
-        </div>
-        {/* ******************* About section************************ */}
-        <div className='row'>
-          <div id="sectionAbout" className='secabout'>
-            <div className='container-fluid'>
-              <div className='col-md-12 mx-auto '>
-                <div className='row mb-5' style={{ marginTop: "100px" }}>
-                  <div className='col-12 fs-1 text-white txtabout '>
-                    <h1> About Me</h1>
-
-                  </div>
+          
+      
+{/* *****************************************About Section**************************** */}
+<div id="sectionAbout" className='secabout container-fluid'>
+          
+          <div className="row  rp-y">
+          <div className=' col-sm-12'>
+                <div className='fs-1 text-white txtabout '>
+                  <h1> About Me</h1>
                 </div>
 
-
               </div>
-              <div className='row'>
-                <div className='col-sm-12 col-md-6'>
+          </div>
+            
+                <div className='row mb-5'>
+                  <div className='col-sm-12 col-md-6'>
                   {/* <h1 className='col-sm-4  col-md-12 mx-auto' style={{ color: "white" }}><span>Hey!&nbsp;</span>I Am Sagar</h1> */}
                   <div className='row'>
-                    <div className='fs-5' style={{ color: "#333131" }}>
+                  <div className='col-md-12'>
+                    <div className='fs-5'>
                       My name is <b> Sagar</b> and I'm a <b>Web Developer</b> &nbsp;And
                       I'm currently  working as a intern  in <b>CIIT Training Institute Pvt.ltd</b> at India, Pune
 
                       <h5> When I'm not on the computer, I enjoy, swimming, Travelling.</h5>
                     </div>
-
-                    <div className=' col-sm-4  col-md-12 mx-auto'>
+                      </div>
+                    <div className='col-md-12'>
                       <h1>Portfolio Links</h1>
                       <div className='' style={{ color: "#FFB6B6", fontSize: "50px" }}>
-                        <a href='https://github.com/sagarmasal2018/SUI'>
+                        <a href='https://github.com/sagarmasal2018/'>
                           <i className="fa fa-github-square  socialLinks m-2" ></i></a>
                         <a href='https://www.facebook.com/SaiVishv99/'>
                           <i className="fa fa-facebook-square socialLinks m-2"></i></a>
@@ -178,140 +174,117 @@ Sagar
                     </div>
                   </div>
                 </div>
-                <div className='col-sm-6 col-md-6 mx-auto'>
+                <div className='col-sm-12 col-md-6 mx-auto'>
                   <div className='row'>
-                    {/* <div className='col-sm-4'></div> */}
-                    {/* <div className='col-sm-8 col-md-6 mt-sm-5 p-0'> */}
-                    {/* <img src={img} className='img-fluid p-0' alt='' /> */}
-                    {/* </div> */}
-
                     <div className="skills">
                       <div className=' text-center text-white fs-2 '><b className='txtskill'>My Skills</b></div>
                       <div className="col-md-12 ss">
                         {
                           skills && skills.map((d, k) => (
                             <div key={k} class="badge text-dark m-2 p-3">{d.toUpperCase()}</div>
-
                           ))
                         }
-
-
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+           
             </div>
-          </div>
-        </div>
-        {/* ******************* Project  section************************ */}
-        <div className='row'>
-          <div id="sectionProject" className='secproject'>
+          {/* *******************************Project Section**************************** */}
+          <div id="sectionProject" className='secproject container-fluid '>
+            <div className='row rp-y'>
 
-            <div className='container-fluid'>
-              <div className='row rp-y'>
+  <div className="col-md-6">
+      <div className='projectdetails' >
+        {
+          projects.projecdetails1.map((d, k) => (
+            <>
+              <div className='projectheading' key={k}>
+                <h2>Project No:-{d.projectNO}</h2>
+              </div>
+              <div className='row' key={k+2}>
+                <div className=' col-sm-6 col-md-4'>
+                  <img src={d.project_scren} className='img-fluid' alt='project' />
+                </div>
+                <div className=' col-sm-6 col-md-8  '>
 
-              <div className="col-md-6 mt-5 mx-auto">
-                  <div className='projectdetails' >
-                    {
-                      projects.projecdetails1.map((d, k) => (
-                        <>
-                          <div className='projectheading' key={k}>
-                            <h2>Project No:-{d.projectNO}</h2>
-                          </div>
-                          <div className='row' key={k+2}>
-                            <div className=' col-sm-6 col-md-4'>
-                              <img src={d.project_scren} className='img-fluid' alt='project' />
-                            </div>
-                            <div className=' col-sm-6 col-md-8  '>
+                  <h3>{d.project_Name}</h3>
+                  <p> {d.project_Desc} </p>
+                  <div className="ss">
+                  {
+                   projects.use_skills1.map((d,k)=>(
 
-                              <h3>{d.project_Name}</h3>
-                              <p> {d.project_Desc} </p>
-                              <div className="ss">
-                              {
-                               projects.use_skills1.map((d,k)=>(
-
-                               <div key={k} class="badge text-dark m-2 p-3">{d.toUpperCase()}</div>
-                               ))
-                              }
-                              </div>
-
-                            </div>
-                          </div>
-
-                        </>
-                      ))
-                    }
-
-                  </div >
+                   <div key={k} class="badge text-dark m-2 p-3">{d.toUpperCase()}</div>
+                   ))
+                  }
+                  </div>
 
                 </div>
+              </div>
 
-                <div className="col-md-6 mt-5 mx-auto">
-                  <div className='projectdetails' >
-                    {
-                      projects2.projecdetails2.map((d, k) => (
-                        <>
-                          <div className='projectheading' key={k}>
-                            <h2>Project No:-{d.projectNO}</h2>
-                          </div>
-                          <div className='row' key={k+1}>
-                            <div className=' col-sm-6 col-md-4'>
-                              <img src={d.project_scren} className='img-fluid' alt='project' />
-                            </div>
-                            <div className=' col-sm-6 col-md-8  '>
+            </>
+          ))
+        }
 
-                              <h3>{d.project_Name}</h3>
-                              <p> {d.project_Desc} </p>
-                              <div className="ss">
-                              {
-                               projects2.use_skills2.map((d,k)=>(
+      </div >
 
-                               <div key={k} class="badge text-dark m-2 p-3">{d.toUpperCase()}</div>
-                               ))
-                              }
-                              </div>
+    </div>
 
-                            </div>
-                          </div>
+    <div className="col-md-6">
+      <div className='projectdetails' >
+        {
+          projects2.projecdetails2.map((d, k) => (
+            <>
+              <div className='projectheading' key={k}>
+                <h2>Project No:-{d.projectNO}</h2>
+              </div>
+              <div className='row' key={k+1}>
+                <div className=' col-sm-6 col-md-4'>
+                  <img src={d.project_scren} className='img-fluid' alt='project' />
+                </div>
+                <div className=' col-sm-6 col-md-8  '>
 
-                        </>
-                      ))
-                    }
+                  <h3>{d.project_Name}</h3>
+                  <p> {d.project_Desc} </p>
+                  <div className="ss">
+                  {
+                   projects2.use_skills2.map((d,k)=>(
 
-                  </div >
+                   <div key={k} class="badge text-dark m-2 p-3">{d.toUpperCase()}</div>
+                   ))
+                  }
+                  </div>
 
                 </div>
-
               </div>
+
+            </>
+          ))
+        }
+
+      </div >
+
+    </div>
+
+  </div>
+</div>
+{/* ************************************Contact Section ****************************/}
+<div id="sectionContactUs" className='seccontact container-fluid'>
+  <div className='row rp-y'>
+
+ <div>
+  <p> <h3>Address:Pune &nbsp;&nbsp;&nbsp;&nbsp;  Mobile No:- 7387523318&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+  Email:-sagarmasal2018@gmail.com
+  </h3>
+  </p>
+ </div>
+
+  </div>
+</div>
+
             </div>
-          </div>
-        </div>
-
-
-
-        {/* ************************ Contact Us******************************** */}
-
-        <div className='row'>
-          <div id="sectionContactUs" className='seccontact'>
-
-            <div className='container-fluid'>
-              <div className='row rp-y'>
-
-             <div>
-              <p> <h3>Address:Pune &nbsp;&nbsp;&nbsp;&nbsp;  Mobile No:- 7387523318&nbsp;&nbsp;&nbsp;&nbsp;
-             
-              Email:-sagarmasal2018@gmail.com
-              </h3>
-              </p>
-             </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
 
     </>
   )
